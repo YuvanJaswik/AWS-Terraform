@@ -16,7 +16,7 @@ resource "aws_instance" "jenkins-ec2" {
   ami                       = "ami-051f7e7f6c2f40dc1"
   instance_type             = "t2.micro"
   security_groups = [aws_security_group.myjenkins_sg.name]
-  user_data                 = file("install_jenkins.sh")
+  #user_data                 = file("install_jenkins.sh")
  
   tags = {
     Name = "jenkins-ec2"
