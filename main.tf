@@ -9,8 +9,7 @@ terraform {
 #Configure the AWS Provider
 provider "aws" {
   region = "us-east-1"
-  shared_credentials_files = "./root/.aws/credentials"
-}
+  }
 
 #Create EC2 Instance
 resource "aws_instance" "jenkins-ec2" {
